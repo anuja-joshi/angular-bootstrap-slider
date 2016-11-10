@@ -2,7 +2,7 @@
     if (typeof define === 'function' && define.amd) {
         define(['angular', 'bootstrap-slider'], factory);
     } else if (typeof module === 'object' && module.exports) {
-        module.exports = factory(require('angular'), require('./../../bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js'));
+        module.exports = factory(require('angular'), require('bootstrap-slider'));
     } else if (window) {
         factory(window.angular, window.Slider);
     }
